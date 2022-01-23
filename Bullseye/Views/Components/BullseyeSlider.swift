@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct BullseyeSlider: View {
-    private let textColorName = "TextColor"
-    
     var minValue = 1.0
     var maxValue = 100.0
     @Binding var sliderValue: Double
     
     var body: some View {
         HStack {
-            Text(String(Int(minValue)))
-                .bold()
-                .foregroundColor(Color(textColorName))
+            SliderLabelText(text: String(Int(minValue)))
             Slider(value: $sliderValue, in: minValue...maxValue)
-            Text(String(Int(maxValue)))
-                .bold()
-                .foregroundColor(Color(textColorName))
+            SliderLabelText(text: String(Int(maxValue)))
         }
+    }
+}
+
+struct SliderLabelText: View {
+    private let textColorName = "TextColor"
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .bold()
+            .foregroundColor(Color(textColorName))
+            .frame(width: 35.0)
     }
 }
 

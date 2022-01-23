@@ -12,6 +12,12 @@
 		881BF6922799B27200728983 /* BullseyeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BF6912799B27200728983 /* BullseyeSlider.swift */; };
 		881BF6942799E01D00728983 /* BullseyeInstructionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BF6932799E01D00728983 /* BullseyeInstructionText.swift */; };
 		881BF696279A042A00728983 /* BullseyeHitMeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881BF695279A042A00728983 /* BullseyeHitMeButton.swift */; };
+		88B6D746279DD29F00CF9B8D /* BullseyeRoundedImageViewStroked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D745279DD29F00CF9B8D /* BullseyeRoundedImageViewStroked.swift */; };
+		88B6D748279DD43000CF9B8D /* BullseyeRoundedImageViewFilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D747279DD43000CF9B8D /* BullseyeRoundedImageViewFilled.swift */; };
+		88B6D74B279DD92C00CF9B8D /* BullseyeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D74A279DD92C00CF9B8D /* BullseyeImageView.swift */; };
+		88B6D751279DE51500CF9B8D /* BackgroundHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D750279DE51500CF9B8D /* BackgroundHomeView.swift */; };
+		88B6D753279DEBF100CF9B8D /* BullseyeRoundRectTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D752279DEBF100CF9B8D /* BullseyeRoundRectTextView.swift */; };
+		88B6D755279DEE8200CF9B8D /* BullseyeLabelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B6D754279DEE8200CF9B8D /* BullseyeLabelText.swift */; };
 		88CBFC672793D0EC006DD559 /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CBFC662793D0EC006DD559 /* BullseyeApp.swift */; };
 		88CBFC692793D0EC006DD559 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CBFC682793D0EC006DD559 /* HomeView.swift */; };
 		88CBFC6B2793D0ED006DD559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CBFC6A2793D0ED006DD559 /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 		881BF6912799B27200728983 /* BullseyeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeSlider.swift; sourceTree = "<group>"; };
 		881BF6932799E01D00728983 /* BullseyeInstructionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeInstructionText.swift; sourceTree = "<group>"; };
 		881BF695279A042A00728983 /* BullseyeHitMeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeHitMeButton.swift; sourceTree = "<group>"; };
+		88B6D745279DD29F00CF9B8D /* BullseyeRoundedImageViewStroked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeRoundedImageViewStroked.swift; sourceTree = "<group>"; };
+		88B6D747279DD43000CF9B8D /* BullseyeRoundedImageViewFilled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeRoundedImageViewFilled.swift; sourceTree = "<group>"; };
+		88B6D74A279DD92C00CF9B8D /* BullseyeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeImageView.swift; sourceTree = "<group>"; };
+		88B6D750279DE51500CF9B8D /* BackgroundHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundHomeView.swift; sourceTree = "<group>"; };
+		88B6D752279DEBF100CF9B8D /* BullseyeRoundRectTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeRoundRectTextView.swift; sourceTree = "<group>"; };
+		88B6D754279DEE8200CF9B8D /* BullseyeLabelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeLabelText.swift; sourceTree = "<group>"; };
 		88CBFC632793D0EC006DD559 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CBFC662793D0EC006DD559 /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		88CBFC682793D0EC006DD559 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -67,9 +79,12 @@
 		881BF68C2798A04000728983 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				88B6D749279DD43700CF9B8D /* RoundedImageViews */,
 				881BF68D2798A07200728983 /* BullseyeButton.swift */,
 				881BF68F2799B06100728983 /* BullseyeBigText.swift */,
 				881BF6912799B27200728983 /* BullseyeSlider.swift */,
+				88B6D74A279DD92C00CF9B8D /* BullseyeImageView.swift */,
+				88B6D752279DEBF100CF9B8D /* BullseyeRoundRectTextView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -79,6 +94,7 @@
 			children = (
 				881BF698279AF6C500728983 /* Components */,
 				88CBFC682793D0EC006DD559 /* HomeView.swift */,
+				88B6D750279DE51500CF9B8D /* BackgroundHomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -88,8 +104,18 @@
 			children = (
 				881BF6932799E01D00728983 /* BullseyeInstructionText.swift */,
 				881BF695279A042A00728983 /* BullseyeHitMeButton.swift */,
+				88B6D754279DEE8200CF9B8D /* BullseyeLabelText.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		88B6D749279DD43700CF9B8D /* RoundedImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				88B6D745279DD29F00CF9B8D /* BullseyeRoundedImageViewStroked.swift */,
+				88B6D747279DD43000CF9B8D /* BullseyeRoundedImageViewFilled.swift */,
+			);
+			path = RoundedImageViews;
 			sourceTree = "<group>";
 		};
 		88CBFC5A2793D0EC006DD559 = {
@@ -264,11 +290,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				881BF68E2798A07200728983 /* BullseyeButton.swift in Sources */,
+				88B6D753279DEBF100CF9B8D /* BullseyeRoundRectTextView.swift in Sources */,
+				88B6D746279DD29F00CF9B8D /* BullseyeRoundedImageViewStroked.swift in Sources */,
 				881BF6942799E01D00728983 /* BullseyeInstructionText.swift in Sources */,
 				88CBFC692793D0EC006DD559 /* HomeView.swift in Sources */,
 				88EE49502797231B0073E264 /* Game.swift in Sources */,
+				88B6D755279DEE8200CF9B8D /* BullseyeLabelText.swift in Sources */,
 				881BF696279A042A00728983 /* BullseyeHitMeButton.swift in Sources */,
+				88B6D74B279DD92C00CF9B8D /* BullseyeImageView.swift in Sources */,
+				88B6D751279DE51500CF9B8D /* BackgroundHomeView.swift in Sources */,
 				881BF6922799B27200728983 /* BullseyeSlider.swift in Sources */,
+				88B6D748279DD43000CF9B8D /* BullseyeRoundedImageViewFilled.swift in Sources */,
 				88CBFC672793D0EC006DD559 /* BullseyeApp.swift in Sources */,
 				881BF6902799B06100728983 /* BullseyeBigText.swift in Sources */,
 			);

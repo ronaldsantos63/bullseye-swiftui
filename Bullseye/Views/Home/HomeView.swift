@@ -19,8 +19,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(Strings.backgroundColorName)
-                .edgesIgnoringSafeArea(.all)
+            BackgroundHomeView(game: $game)
             VStack {
                 InstructionsView(target: String(game.target))
                 BullseyeSlider(sliderValue: $sliderValue).padding()
